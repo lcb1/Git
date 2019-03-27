@@ -1,0 +1,24 @@
+------
+git config --global user.email email
+git config --global user.name "username"
+git config
+git config --help
+git config --get key
+git config --list
+git config --list --global
+git config --list --local
+git config --list --system
+git config --unset key
+
+------
+git init
+git log
+git add filename1 filename2 ...
+git  commit -m "state"
+git log --pretty=oneline
+git reflog
+git checkout -- filename
+git reset --hard filename
+git rm 
+git rm --cached
+git diff commit_id -- live_filename
