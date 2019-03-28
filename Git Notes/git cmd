@@ -1,24 +1,39 @@
-------
-git config --global user.email email
+------git 配置
+git config --global user.email email  ---配置全局的变量
 git config --global user.name "username"
-git config
+git config        --显示帮助
 git config --help
-git config --get key
-git config --list
+git config --get key  ----获取配置key对应的value值
+git config --list     ----列出所有的配置包括以下三种
 git config --list --global
 git config --list --local
 git config --list --system
-git config --unset key
+git config --unset key   -----删除key对应的value
 
-------
-git init
-git log
-git add filename1 filename2 ...
-git  commit -m "state"
-git log --pretty=oneline
-git reflog
-git checkout -- filename
-git reset --hard filename
-git rm 
-git rm --cached
-git diff commit_id -- live_filename
+------git 操作
+git init   ---初始化仓库
+git log  ----操作日志和版本id
+git add filename1 filename2 ...     -----将文件提交到暂存区
+git  commit -m "state"      --------提交到仓库
+git log --pretty=oneline   ----行的形式显示log
+git reflog     -------
+git checkout -- filename   ----撤销和还原文件的改动
+git reset --hard filename    ------回到某一版本
+git rm                      -----在仓库里面删除文件。。同时删除工作区
+git rm --cached               ---只删除仓库里面的文件
+git diff commit_id -- live_filename     ----比较某个版本的文件和现在文件的不同
+
+------git 分支操作
+git branch branchName  ---创建一个分支
+git checkout -b branchName  ----切换并创建一个分支
+git checkout branchName   -----切换分支
+git branch -d branchName   ---删除分支
+
+-------git 远程仓库
+git clone url    ----克隆一个远程仓库
+git remote add alias url   ----建立与远程仓库的连接
+git remote -v       -----查看建立连接的远程仓库
+git remote    
+git remote remove alias   ---移除建立的远程连接
+git pull alias branchName   ------拉取远程仓库
+git push alias branchName    -------将本地仓库推到远程仓库
